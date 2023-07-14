@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y+8mu&7k(1@t_k#l*isy7@#)bmhi4!h#-i$!%3+630ruf_5k^q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -123,3 +123,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+CSRF_TRUSTED_ORIGINS = ['https://heartgold.store','https://175.45.205.1:8000']
